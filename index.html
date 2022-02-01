@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-items">
+        <img src="images/icon-menu.svg" class="open-menu" alt="">
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link">Collections</li>
+          <li class="nav-link"> Men</li>
+          <li class="nav-link">Women</li>
+          <li class="nav-link">About</li>
+          <li class="nav-link">Contact</li>
+          <img src="images/icon-close.svg" class="close" alt="">
+        </ul>
+      </div>
+      <div class="nav-cart">
+        <div class="cart">
+          <div class="cart-number hidden">0</div>
+          <img id="cart" src="images/icon-cart.svg" alt="">
+        </div>
+        <div class="user-profile">
+          <img src="images/image-avatar.png" alt="">
+        </div>
+      </div>
+      <div class="cart-empty cart-hidden">
+        <div class="cart-header">
+          <span>cart</span>
+          <img src="images/icon-close.svg" class="cart-close" alt="">
+        </div>
+        <p class="cart-empty-text ">Your cart is empty</p>
+        <div class="item-container hidden">
+          <div class="item-upper">
+            <img src="images/image-product-1-thumbnail.jpg" class="cart-img" alt="">
+            <div class="text">
+              <span class="item-name">Autumn Limited Edition...</span>
+              <p class="price">$125 * 1 = $125</p>
+            </div>
+            <img src="images/icon-delete.svg" class="delete" alt="">
+          </div>
+          <button class="btn">Checkout</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="img-container">
+        <img src="images/image-product-1.jpg" class="big-img" alt="">
+        <div class="previous-slide mobile-design">
+          <img src="images/icon-previous.svg" alt="">
+        </div>
+        <div class="next-slide mobile-design">
+          <img src="images/icon-next.svg" alt="">
+        </div>
+        <div class="thumbnail-container">
+          <img src="images/image-product-1-thumbnail.jpg" data-img="1" id="thumbnail" class="thumbnail-active" alt="">
+          <img src="images/image-product-2-thumbnail.jpg" data-img="2" id="thumbnail" alt="">
+          <img src="images/image-product-3-thumbnail.jpg" data-img="3" id="thumbnail" alt="">
+          <img src="images/image-product-4-thumbnail.jpg" data-img="4" id="thumbnail" alt="">
+        </div>
+      </div>
+      <div class="text-container">
+        <span class="company-name">
+          Sneaker Company
+        </span>
+        <h1 class="main-heading">Fall Limited Edition Sneakers</h1>
+        <p class="main-text">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="price-container">
+          <span class="price"> $125.00</span>
+          <span class="price-off">50%</span>
+        </div>
+        <span class="real-price">$250.00</span>
+        <div class="input_btn">
+          <div class="input-container">
+            <input type="number" value="1" min="1" class="input">
+            <img src="images/icon-plus.svg" alt="" class="plus">
+            <img src="images/icon-minus.svg" alt="" class="minus">
+          </div>
+          <button class="btn add-cart-btn">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <div class="overlay hidden"></div>
+  <div class="modal hidden ">
+    <div class="previous-slide">
+      <img src="images/icon-previous.svg" alt="">
+    </div>
+    <div class="next-slide">
+      <img src="images/icon-next.svg" alt="">
+    </div>
+    <img src="images/icon-close.svg" alt="" class="close-menu">
+    <img src="images/image-product-1.jpg" class="big-img modal-img" alt="">
+    <div class="thumbnail-container">
+      <img src="images/image-product-1-thumbnail.jpg" data-img="1" id="thumbnail" class="thumbnail-active" alt="">
+      <img src="images/image-product-2-thumbnail.jpg" data-img="2" id="thumbnail" alt="">
+      <img src="images/image-product-3-thumbnail.jpg" data-img="3" id="thumbnail" alt="">
+      <img src="images/image-product-4-thumbnail.jpg" data-img="4" id="thumbnail" alt="">
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
